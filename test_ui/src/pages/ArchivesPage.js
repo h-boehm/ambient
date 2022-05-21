@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom';
 import EntryList from '../components/EntryList';
 import { useState, useEffect } from 'react';
 import { useHistory } from 'react-router-dom';
-import ornament from '../ornament.png';
-import bumblebee from '../bumblebee2.png';
-import watercolor from '../watercolor.png';
+import ornament from '../images/ornament.png';
+import bumblebee from '../images/bumblebee2.png';
+import watercolor from '../images/watercolor.png';
 
 function ArchivePage({setEntryToEdit}) {
 

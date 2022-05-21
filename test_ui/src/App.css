@@ -11,6 +11,19 @@
   filter: brightness(90%) contrast(1.7) opacity(90%);
 }
 
+#google-image {
+  height: 72px;
+  width: 148px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: 8%;
+  margin-left: 0px;
+  margin-top: -86px;
+  top: 6px;
+  filter: brightness(90%) contrast(1.7) opacity(90%);
+}
+
 #ornament {
   position: absolute;
   height: 210px;
@@ -309,6 +322,14 @@ textarea:focus {
   float: right;
   margin-left: 766px;
   width: 400px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+#weather-data {
+  position: absolute;
+  margin-left: 759px;
+  margin-top: 84px;
+  color:#36475a;
   font-family: 'Courier New', Courier, monospace;
 }
 

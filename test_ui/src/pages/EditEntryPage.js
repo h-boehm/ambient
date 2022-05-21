@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useHistory } from "react-router-dom";
-import ornament from '../ornament.png';
-import watercolor from '../watercolor.png';
+import ornament from '../images/ornament.png';
+import watercolor from '../images/watercolor.png';
 
 export const EditEntryPage = ({entryToEdit}) => {
 

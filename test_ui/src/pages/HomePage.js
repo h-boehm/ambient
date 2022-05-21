@@ -3,10 +3,13 @@ import { Link } from 'react-router-dom';
 import EntryList from '../components/EntryList';
 import { useState, useEffect } from 'react';
 import { useHistory } from 'react-router-dom';
-import ornament from '../ornament.png';
-import watercolor from '../watercolor.png';
-import bumblebee from '../bumblebee2.png';
-import weather from '../weather.png';
+import ornament from '../images/ornament.png';
+import watercolor from '../images/watercolor.png';
+import bumblebee from '../images/bumblebee2.png';
+import weather from '../images/weather.png';
+import WeatherData from '../components/Weather.js';
+import ImageData from '../components/Image.js';
+
 
 function HomePage({setEntryToEdit}) {
 
@@ -36,6 +39,9 @@ function HomePage({setEntryToEdit}) {
         setEntries(entries);
     }
 
+	var weather_text = require("../weather_ms/weather_response.txt");
+    let image_url = require("../image_ms/ms5.txt");
+
     useEffect(() => {
         loadEntries();
     }, []);
@@ -43,6 +49,7 @@ function HomePage({setEntryToEdit}) {
     return (
                
         <div id="container">
+            
 
             <img src={ornament} id="ornament" alt="ornament"/>
             <div id="vl"></div>
@@ -55,7 +62,7 @@ function HomePage({setEntryToEdit}) {
             </div>
 
             <div id="left-side">
-
+                
                 <Link to="/add-entry" button id="new-entry-button">new entry</Link>
 
                 <img src={weather} id="weather" alt="weather"/>
@@ -70,6 +77,8 @@ function HomePage({setEntryToEdit}) {
 
             <div id="right-column"></div>
 
+            <div id="weather-data"><WeatherData txt={weather_text}/></div>
+            
             <div id="right-side">
 
                 <img src={bumblebee} id="bumblebee" alt="bumblebee"/>
@@ -90,9 +99,9 @@ function HomePage({setEntryToEdit}) {
                 </div>
 
                 <div id="statistics-text">
-                    word count: 
+                    word count: 1
                     <br></br>
-                    entries: 
+                    entries: 1
                 </div>
 
             </div>
