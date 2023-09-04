@@ -1,5 +1,5 @@
 {
-  "name": "entries_rest",
+  "name": "ambient-rest",
   "version": "1.0.0",
   "description": "",
   "main": "entries_controller.mjs",
